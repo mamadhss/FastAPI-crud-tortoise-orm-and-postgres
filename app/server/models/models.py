@@ -9,7 +9,7 @@ class Todo(models.Model):
     completed = fields.BooleanField()
 
 Todo_Pydantic = pydantic_model_creator(Todo,name="Todo")
-TodoIn_Pydantic = pydantic_model_creator(Todo,name="TodoIn",exclude_readonly=False)
+TodoIn_Pydantic = pydantic_model_creator(Todo,name="TodoIn",exclude_readonly=True)
 
 
 
